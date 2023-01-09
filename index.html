@@ -6,7 +6,7 @@
   <title>InMark|인마크</title>
 
   <!--meta-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="le=edge">
 
   <!--bootstrap-->
@@ -36,47 +36,55 @@
 <body>
 
 
+
   <header>
 
-    <div class="">
+    <div class="header_wrap container">
 
       <hgroup>
 
-        <h1><img src="img/" alt="logo"></h1>
+
+        <h1><img src="img/inmark_logoW.png" alt="logo"></h1>
 
       </hgroup>
 
 
-      <nav class="">
+      <nav class="pc_wrap">
         <ul>
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about" class="scroll">About</a></li>
+          <li><a href="business" class="scroll">Business</a></li>
+          <li><a href="roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="contact" class="scroll">Contact</a></li>
+
 
         </ul>
       </nav>
 
+      <div class="site_lan">
+        <a href="index_eng.html">Eng <img src="img/eng_icon.png" alt=""></a>
+      </div>
+
 
       <!--반응형-->
 
-      <div class="">
+      <div class="menu_btn">
 
-        <img src="img/" alt="menu_button">
+        <span><i class="xi-plus"></i></span>
 
       </div>
 
-      <nav class="">
+      <nav class="mobile_wrap">
 
         <ul>
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about" class="scroll">About</a></li>
+          <li><a href="business" class="scroll">Business</a></li>
+          <li><a href="roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="contact" class="scroll">Contact</a></li>
+          <li><a href="index_eng.html" class="eng_site">Eng <img src="img/eng_icon.png" alt=""></a></li>
 
         </ul>
 
@@ -85,21 +93,69 @@
       <!--반응형 js-->
       <script type="text/javascript">
         $(function () {
-          $("").click(function () {
-            $("").animate({ width: "toggle" }, 250);
+          $(".menu_btn").click(function () {
+            $(".mobile_wrap").animate({ width: "toggle" }, 250);
           });
         });
 
       </script>
 
     </div>
-
   </header>
 
   <main>
+    <section id="home">
+      <div class="main_video">
+        <video autoplay="" muted loop playsinline>
+          <source src="vid/main_vid.mp4" type="video/mp4">
+        </video>
+      </div><!-- main_video -->
+
+      <div class="main_txt">
+        <h2>
+          Advertisers <br class="hidden"> X <br class="hidden">Influencers
+        </h2>
+        <p>
+          Advertising mediation matching platform
+        </p>
+        <div class="main_btn">
+          <button class="custom-btn btn-16"><a href="InMark WhitePaper KR.pdf">Whitepaper</a></button>
+          <button class="custom-btn btn-16"><a href="">Wallet</a></button>
+        </div>
+      </div>
+
+      <div class="fix_up">
+        <a href="#home" class="scroll"><i class="xi-caret-up"></i></a>
+      </div>
+    </section>
+    <!-- home -->
+
+    <section id="about">
+
+
+      <div class="about_area container">
+      <h3>About</h3>
+        <div class="about_img">
+          <img src="img/about_ko.png" alt="">
+          <img class="en" src="img/about_eng.png" alt="">
+        </div>
+
+        <div class="about_txt">
+          <h4>InMark</h4>
+
+          <article>
+            InMark 플랫폼은 중개인 개입을 없애고 <br>
+            광고주와 인플루언서를 직접 연결과 계약을 지원하며<br>
+            인플루언서의 마케팅 활동을 트랜잭션 기반으로<br>
+            캠페인 기여도를 측정하고 그에 따른 리워드를 지급하는<br>
+            POC 방식의 보상 및 광고비 합리화 시스템을 지원하는 플랫폼입니다.
+          </article>
+        </div>
+      </div>
+    </section>
 
   </main>
-  
+
   <footer>
 
   </footer>
