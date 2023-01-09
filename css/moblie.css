@@ -1,5 +1,7 @@
 /*데탑*/
 @media screen and (max-width:1440px) {
+  /* home */
+
   .main_video video {
     width: auto;
     height: 100%;
@@ -10,6 +12,8 @@
 
 /*노트북*/
 @media screen and (max-width:1024px) {
+
+  /* home */
   .main_txt h2 {
     padding: 21% 0%;
     margin-bottom: 10%;
@@ -33,6 +37,8 @@
 
 /*아이패드 (768px)*/
 @media screen and (max-width:991px) {
+  /* home */
+
   .main_txt {
     width: 80%;
     height: 50%;
@@ -48,20 +54,22 @@
     display: block;
   }
 
-  #about .about_area {
+/* about */
+
+  #about .about_area .about_area_txt  {
     flex-direction: column;
   }
 
-  #about .about_area .about_img {
+  #about .about_area .about_area_txt .about_img {
     width: 100%;
   }
 
-  #about .about_area .about_img img {
+  #about .about_area .about_area_txt .about_img img {
     max-width: 100%;
     margin-top: 10%;
   }
 
-  #about .about_area .about_txt {
+  #about .about_area .about_area_txt .about_txt {
     width: 100%;
     margin-top: 10%;
   }
@@ -78,6 +86,8 @@
 
 
 @media screen and (max-width:576px) {
+  /* home */
+
   .main_txt {
     top: 44%;
   }
@@ -112,12 +122,12 @@
   h3 {
     font-size: 2em;
   }
-
-  #about .about_area .about_txt h4 {
+/* about */
+  #about .about_area .about_area_txt  .about_txt h4 {
     font-size: 1.5rem;
   }
 
-  #about .about_area .about_txt article {
+  #about .about_area .about_area_txt  .about_txt article {
     font-size: 14px;
   }
 }

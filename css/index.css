@@ -169,6 +169,8 @@ hgroup h1 img {
   color: #181727;
   border-radius: 30px;
   padding: 5px 10px;
+  font-size: 1rem;
+  line-height: 5;
 }
 
 .mobile_wrap ul li:hover a{
@@ -346,7 +348,11 @@ hgroup h1 img {
   left: 0;
 }
 
-#about .about_area {
+#about .about_area{
+  position: relative;
+}
+
+#about .about_area .about_area_txt {
   position: relative;
   color: #fff;
   display: flex;
@@ -354,21 +360,22 @@ hgroup h1 img {
   justify-content: space-between;
   z-index: 10;
 }
-#about .about_area .about_img {
+
+#about .about_area .about_area_txt .about_img {
   width: 50%;
 }
-#about .about_area .about_img img {
+#about .about_area .about_area_txt .about_img img {
   max-width: 80%;
   margin: 0 auto;
 }
 
-#about .about_area .about_img img.en {
+#about .about_area .about_area_txt .about_img img.en {
   display: none;
 }
-#about .about_area .about_txt {
+#about .about_area .about_area_txt .about_txt {
   width: 50%;
 }
-#about .about_area .about_txt h4 {
+#about .about_area .about_area_txt .about_txt h4 {
   font-size: 2rem;
   font-weight: 600;
   position: relative;
@@ -376,7 +383,7 @@ hgroup h1 img {
   display: block;
 }
 
-#about .about_area .about_txt h4::after {
+#about .about_area .about_area_txt .about_txt h4::after {
   content: " ";
   width: 50%;
   height: 3px;
@@ -386,7 +393,7 @@ hgroup h1 img {
   background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.744792) 25.52%, rgba(255, 255, 255, 0) 100%);
 }
 
-#about .about_area .about_txt article{
+#about .about_area .about_area_txt .about_txt article{
   line-height:2;
   padding-top: 5%;
 }
