@@ -29,15 +29,16 @@
     padding: 5% 2% 2.5%;
   }
 
-    /* roadmap */
-    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
-      padding: 0 33%;
-    }
-    /* contact */
-    #contact .ct_wrap form input.send {
-      width: 30%;
-      line-height: 3.5rem;
-    }
+  /* roadmap */
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
+    padding: 0 33%;
+  }
+
+  /* contact */
+  #contact .ct_wrap form input.send {
+    width: 30%;
+    line-height: 3.5rem;
+  }
 
 }
 
@@ -88,19 +89,29 @@
     height: 600px;
   }
 
-    /* roadmap */
-    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
-      padding: 0 23%;
-    }
-    /* contact */
-    #contact .ct_wrap form input.send {
-      width: 40%;
-      line-height: 3.2rem;
-    }
-    /* footer */
-    footer .f_wrap .f_ct .f_com {
-      width: 15%;
-    }
+  /* roadmap */
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4::before {
+    right: -177%;
+  }
+
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box:nth-child(2) .rdm_txt h4::before {
+    left: -177%;
+  }
+
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
+    padding: 0 23%;
+  }
+
+  /* contact */
+  #contact .ct_wrap form input.send {
+    width: 40%;
+    line-height: 3.2rem;
+  }
+
+  /* footer */
+  footer .f_wrap .f_ct .f_com {
+    width: 15%;
+  }
 
 
 }
@@ -205,21 +216,32 @@
   }
 
 
-    /* roadmap */
-    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
-      padding: 0 10%;
-    }
-    /* contact */
-    #contact .ct_wrap form input.send {
-      width: 50%;
-    }
-    /* footer */
-    footer .f_wrap .f_ct h1 img {
-      max-width: 70%;
-    }
-    footer .f_wrap .f_ct .f_com {
-      width: 20%;
-    }
+  /* roadmap */
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
+    padding: 0 10%;
+  }
+
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4::before {
+    right: -201%;
+  }
+
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box:nth-child(2) .rdm_txt h4::before {
+    left: -201%;
+  }
+
+  /* contact */
+  #contact .ct_wrap form input.send {
+    width: 50%;
+  }
+
+  /* footer */
+  footer .f_wrap .f_ct h1 img {
+    max-width: 70%;
+  }
+
+  footer .f_wrap .f_ct .f_com {
+    width: 20%;
+  }
 
 
 
@@ -267,40 +289,58 @@
   }
 
 
-   /* roadmap */
-   #roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
+  /* roadmap */
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
     padding: 0;
   }
+
+
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4::before {
+    right: -183%;
+  }
+
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box:nth-child(2) .rdm_txt h4::before {
+    left: -183%;
+  }
+
   /* contact */
   #contact .ct_wrap form .half_input {
     flex-direction: column;
     width: 100%;
   }
+
   #contact .ct_wrap form .half_input .email {
     margin: 0 0 3% 0;
     width: 100%;
   }
+
   #contact .ct_wrap form .half_input .name {
     width: 100%;
   }
-  #contact input, #contact textarea {
+
+  #contact input,
+  #contact textarea {
     width: 100%;
   }
+
   /* footer */
   footer .f_wrap .f_ct {
     flex-direction: column;
     text-align: center;
     margin-bottom: 5%;
   }
+
   footer .f_wrap .f_ct h1 {
     width: 30%;
     margin-bottom: 3%;
   }
+
   footer .f_wrap .f_ct .f_info {
     width: 100%;
     margin-bottom: 3%;
     font-size: 0.8rem;
   }
+
   footer .f_wrap .f_ct .f_com {
     width: 30%;
   }
@@ -353,6 +393,7 @@
   #about .about_area .about_area_txt .about_txt h4 {
     font-size: 1.5rem;
   }
+
 
   #about .about_area .about_area_txt .about_txt article {
     font-size: 14px;
@@ -421,28 +462,35 @@
     height: 540px;
   }
 
-   /* roadmap */
+  /* roadmap */
   #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt {
     width: 100%;
   }
-  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_img::after {
-    right: -50%;
-    top: 24%;
-    width: 60px;
-    height: 2px;
-  }
+
   #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4 {
     font-size: 2.5rem;
-    left: -20%;
+    left: 0%;
     top: 10%;
   }
+
   #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h5 {
     font-size: 2.5rem;
   }
+
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4::before {
+    right: -228%;
+  }
+
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box:nth-child(2) .rdm_txt h4::before {
+    left:-228%;
+  }
+
+
   /* contact */
   #contact {
     padding: 100px 4%;
   }
+
   #contact .ct_wrap form input.send {
     width: 60%;
   }
@@ -453,24 +501,36 @@
 /*모바일3 갤럭시*/
 
 @media screen and (max-width:425px) {
-    /* contact */
-    #contact .ct_wrap form input.send {
-      width: 70%;
-      line-height: 3rem;
-      font-weight: 300;
-    }
+
+  /* contact */
+  #contact .ct_wrap form input.send {
+    width: 70%;
+    line-height: 3rem;
+    font-weight: 300;
+  }
 }
 
 
 
 /*모바일4 아이폰*/
 @media screen and (max-width:375px) {
-    /* roadmap */
-    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_img::after {
-      right: -90%;
-      top: 15%;
-    }
-    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4 {
-      top: 2%;
-    }
+
+  /* roadmap */
+
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4 {
+    top: 2%;
+  }
+
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box:nth-child(2) .rdm_txt h4 {
+    top: 2%;
+    left: 100%;
+  }
+
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4::before {
+    right: -202%;
+  }
+
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box:nth-child(2) .rdm_txt h4::before {
+    left:-202%;
+  }
 }

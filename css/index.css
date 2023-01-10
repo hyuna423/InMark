@@ -743,17 +743,6 @@ hgroup h1 img {
   position: relative;
 }
 
-#roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_img::after {
-  content: '';
-  position: absolute;
-  right: -100%;
-  top: 13%;
-  width: 3px;
-  height: 60px;
-
-  background: linear-gradient(91.28deg, #DF9239 7.12%, #EC1691 106.87%);
-  box-shadow: 0px 4px 12px rgba(255, 153, 0, 0.71);
-}
 
 #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_img::before {
   content: '';
@@ -766,7 +755,7 @@ top: 0;
 }
 
 #roadmap .rdm_wrap .rdm_box_wrap .rdm_box:nth-child(2) .rdm_img::after {
-  left: -100%;
+
 }
 
 
@@ -786,8 +775,28 @@ top: 0;
   color: #fff;
   font-size: 3rem;
   font-weight: 700;
-  left: -20%;
+  left: 0;
   top: 10%;
+  transform: translateX(-50%);
+}
+#roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4::before{
+content: '';
+position: absolute;
+right: -164%;
+top: 13%;
+width: 3px;
+height: 100%;
+background: linear-gradient(91.28deg, #DF9239 7.12%, #EC1691 106.87%);
+box-shadow: 0px 4px 12px rgba(255, 153, 0, 0.71);
+}
+
+#roadmap .rdm_wrap .rdm_box_wrap .rdm_box:nth-child(2) .rdm_txt h4{
+  left: 100%;
+  top: 10%;
+}
+
+#roadmap .rdm_wrap .rdm_box_wrap .rdm_box:nth-child(2) .rdm_txt h4::before{
+  left: -164%;
 }
 
 #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt p {
@@ -801,15 +810,6 @@ top: 0;
 #roadmap .rdm_wrap .rdm_box_wrap .rdm_box:nth-child(2) {
   flex-direction: row-reverse;
   justify-content: space-between;
-}
-
-#roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h5 {
-  position: absolute;
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 700;
-  left: 75%;
-  top: 10%;
 }
 
 
