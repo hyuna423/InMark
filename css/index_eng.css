@@ -2,7 +2,9 @@
     a{text-decoration : none;}
     address{font-style:normal;}
 
-
+#roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt {
+    padding: 20% 0% 0% 3%;
+}
 
 
     
@@ -35,7 +37,16 @@
 
 
 @media screen and (max-width:576px) {
-
+  /* roadmap */
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_img::after {
+    right: -50%;
+    top: 20%;
+  }
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4 {
+    font-size: 2.5rem;
+    left: -20%;
+    top: 5%;
+}
 }
 
 
@@ -50,5 +61,16 @@
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
-
+    /* roadmap */
+    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4 {
+      top: 1%;
+    }
+    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_img::after {
+      right: -90%;
+      top: 15%;
+    }
+    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box:nth-child(2) .rdm_img::after {
+      left: -100%;
+      top: 10%;
+    }
 }
