@@ -1,18 +1,166 @@
 
 /*데탑*/
 @media screen and (max-width:1440px) {
+
+  /*business*/
+
+  .business_cont_up{
+    justify-content: space-between;
+  }
+  
+.business_cont_up_boxes{
+  width: 58%;
+  grid-template-rows : repeat(2, 150px);
+  gap: 10px;
+}
+
+.business_cont_up_txt{
+  width: 40%;
+}
+
+.business_cont_down{
+  justify-content: space-between;
+}
+
+.business_cont_down_boxes{
+  width: 58%;
+  grid-template-rows : repeat(2, 150px);
+  gap: 10px;
+}
+
+.business_cont_down_txt{
+  width: 40%;
+}
+
+
+
+/*business2*/
+.business2_data{
+  width: 49%;
+  padding: 5% 2% 2.5%;
+}
+
+.business2_steaking{
+  width: 49%;
+  padding: 5% 2% 2.5%;
+}
+
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+
+    /*business*/
+
+
+
+
+    /*business2*/
+
+    .business2_data br , .business2_steaking br{
+      display: none;
+    }
+
+
+    /*wallet*/
+
+    .wallet_cont_left > p br{
+      display: none;
+    }
+
+    .wallet_cont_right::before{
+      width: 540px;
+      height: 600px;
+    }
+
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+
+
+    /*business*/
+
+    .business_cont_up{
+      flex-direction: column;
+    }
+
+    .business_cont_up_txt{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5%;
+    }
+
+    .business_cont_up_boxes{
+      width: 100%;
+    }
+
+    .business_cont_down{
+      flex-direction: column-reverse;
+      margin-top: 15%;
+    }
+
+    .business_cont_down_boxes{
+      width: 100%;
+    }
+
+    .business_cont_down_txt{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5%;
+    }
+
+    #business::before{
+      width: 750px;
+      top: 55%;
+    }
+
+    .business2_data{
+      width: 100%;
+      margin-bottom: 10%;
+      padding: 10% 8% 8%;
+    }
+
+    .business2_steaking{
+      width: 100%;
+      padding: 10% 8% 8%;
+    }
+
+
+    /*business2*/
+    .business2_cont{
+      flex-direction: column;
+    }
+
+
+    /*wallet*/
+
+    .wallet_cont{
+      flex-direction: column;
+    }
+
+    .wallet_cont_left{
+      width: 100%;
+    }
+
+    .wallet_cont_left > p br{
+      display: block;
+    }
+
+    .wallet_cont_right::before{
+      width: 700px;
+      height: 600px;
+    }
+
+    .wallet_cont_right{
+      width: 80%;
+      margin-left: 20%;
+      margin-top: 15%;
+    }
 }
 
 
@@ -21,21 +169,115 @@
 
 @media screen and (max-width:767px) {
 
+  /*business2*/
+
+  .business2_data{
+    margin-bottom: 15%;
+  }
+
+  .business2_data_title{
+    top: -11%;
+  }
+
+  .business2_steaking_title{
+    top: -11%;
+  }
+  
+
+  /*wallet*/
+
+  .wallet_cont_left{
+    margin-left: -25%;
+  }
+
+   
+  .wallet_cont_left > a{
+    width: 40%;
+  }
+
+  .wallet_cont_right{
+    width: 90%;
+    margin-left: 35%;
+  }
 }
 
 
 /*모바일2*/
 
 
-@media screen and (max-width:576px) {
+ @media screen and (max-width:576px) { 
 
-}
+  /*business*/
+
+   .business_cont_up_boxes {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 200px);
+  }
+
+  .business_cont_up_box{
+
+  }
+
+  #business::before{
+    width: 400px;
+    height: 400px;
+  }
+
+
+
+
+
+/*business2*/
+  .business2_data{
+    margin-bottom: 20%;
+  }
+
+  .business2_data_title{
+    top: -10%;
+  }
+
+  .business2_steaking_title{
+    top: -9%;
+  }
+  
+
+
+
+/*wallet*/
+
+  .wallet_cont_left{
+    margin-left: 0;
+  }
+
+  .wallet_cont_left > p br{
+    display: none;
+  }
+ 
+  .wallet_cont_left > a{
+    width: 50%;
+  }
+
+  .wallet_cont_right{
+    width: 100%;
+    margin-left: 0;
+  }
+
+
+  .wallet_cont_right::before{
+    width: 380px;
+    height: 540px;
+  }
+} 
 
 
 
 /*모바일3 갤럭시*/
 
   @media screen and (max-width:425px) {
+
+      /*business*/
+
+
 
 }
 
