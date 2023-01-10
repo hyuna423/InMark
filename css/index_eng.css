@@ -2,8 +2,38 @@
     a{text-decoration : none;}
     address{font-style:normal;}
 
+.about_area_txt .about_img .ko{
+  display: none;
+}
 
+#about .about_area .about_area_txt .about_img img.en {
+  display: block;
+}
 
+.business2_data_title {
+  width: 290px;
+  top: -9%;
+}
+
+.business2_steaking_title{
+  top: -9%;
+}
+
+#roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt {
+  padding: 20% 0% 0% 3%;
+}
+
+#roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
+max-height: 100%;
+}
+
+#roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_img img {
+height: 100%;
+}
+
+.rdm_txt ul{
+  padding-top: 4%;
+}
 
     
 /*데탑*/
@@ -27,7 +57,28 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+   /*business2*/
+   .business2_cont {
+    flex-direction: column;
+  }
 
+  .business2_data,
+  .business2_steaking {
+    width: 100%;
+    padding: 10% 2% 5.5%;
+  }
+
+  .business2_data {
+    margin-bottom: 20%;
+  }
+
+  .business2_data_title {
+    top: -10%;
+  }
+
+  .business2_steaking_title {
+    top: -9%;
+  }
 }
 
 

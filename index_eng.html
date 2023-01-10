@@ -33,51 +33,58 @@
 </head>
 
 
-
 <body>
+
 
 
   <header>
 
-    <div class="">
+    <div class="header_wrap container">
 
       <hgroup>
 
-        <h1><img src="img/" alt="logo"></h1>
+
+        <h1> <a href="#home" class="scroll"><img src="img/inmark_logoW.png" alt="logo"></a></h1>
 
       </hgroup>
 
 
-      <nav class="">
+      <nav class="pc_wrap">
         <ul>
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about" class="scroll">About</a></li>
+          <li><a href="#business" class="scroll">Business</a></li>
+          <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
+
 
         </ul>
       </nav>
 
+      <div class="site_lan">
+        <a href="index.html" class="eng_site">Ko <img src="img/ko_icon.png" alt=""></a>
+      </div>
+
 
       <!--반응형-->
 
-      <div class="">
+      <div class="menu_btn">
 
-        <img src="img/" alt="menu_button">
+        <span><i class="xi-plus"></i></span>
 
       </div>
 
-      <nav class="">
+      <nav class="mobile_wrap">
 
         <ul>
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about" class="scroll">About</a></li>
+          <li><a href="#business" class="scroll">Business</a></li>
+          <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
+          <li><a href="index.html" class="eng_site">Ko <img src="img/ko_icon.png" alt=""></a></li>
 
         </ul>
 
@@ -86,28 +93,382 @@
       <!--반응형 js-->
       <script type="text/javascript">
         $(function () {
-          $("").click(function () {
-            $("").animate({ width: "toggle" }, 250);
+          $(".menu_btn").click(function () {
+            $(".mobile_wrap").animate({ width: "toggle" }, 250);
           });
         });
 
       </script>
 
     </div>
-
   </header>
 
   <main>
+    <section id="home">
+      <div class="main_video">
+        <video autoplay="" muted loop playsinline>
+          <source src="vid/main_vid.mp4" type="video/mp4">
+        </video>
+      </div><!-- main_video -->
+
+      <div class="main_txt">
+        <h2>
+          Advertisers <br class="hidden"> X <br class="hidden">Influencers
+        </h2>
+        <p>
+          Advertising mediation matching platform
+        </p>
+        <div class="main_btn">
+          <button class="custom-btn btn-16"><a href="InMark WhitePaper KR.pdf">Whitepaper</a></button>
+          <button class="custom-btn btn-16"><a href="">Wallet</a></button>
+        </div>
+      </div>
+
+      <div class="fix_up">
+        <a href="#home" class="scroll"><i class="xi-caret-up"></i></a>
+      </div>
+    </section>
+    <!-- home -->
+
+    <section id="about">
+
+
+      <div class="about_area">
+        <h3>About</h3>
+        <div class="about_area_txt container" data-aos="fade-down">        
+          <div class="about_img">
+            <img class="ko"src="img/about_ko.png" alt="">
+            <img class="en" src="img/about_eng.png" alt="">
+          </div>
+        
+          <div class="about_txt">
+            <h4>InMark</h4>
+        
+            <p>
+              The InMark platform removes intermediary intervention, supports direct connection and contract between advertisers and influencers, measures influencer's marketing activities on a transaction-based campaign contribution, and provides a POC-type compensation and advertising cost rationalization system that provides rewards accordingly.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="business">
+      <div class="business_wrap container">
+        <h3>Business</h3>
+        <div class="grid_container" data-aos="fade-right">
+          <div class="item-1 txt" >
+            <article>
+              <h4>Open call campaign
+              </h4>
+              <p>When an advertiser registers campaign information on the platform, the campaign is exposed to influencers after review.
+
+                Selected influencers can create content according to the campaign mission and post it on personal SNS. When the campaign period ends, reports are provided to advertisers and influencers, and settlement is made based on the report results.
+                </p>
+            </article>
+          </div>
+          <div class="item-2 card">
+            <article>
+              <h5>1. Register campaign information
+              </h5>
+              <img src="img/business_icon1.png" alt="">
+            </article>
+          </div>
+          <div class="item-3 card">
+            <article>
+              <h5>2. Campaign review 
+                and approval
+              </h5>
+              <img src="img/business_icon2.png" alt="">
+            </article>
+          </div>
+          <div class="item-4 card">
+            <article>
+              <h5>3. Campaign exposure    
+                (first come, first serve)
+             </h5>
+              <img src="img/business_icon3.png" alt="">
+            </article>
+          </div>
+          <div class="item-5 card">
+            <article>
+              <h5>4. Deliver influencers
+              </h5>
+              <img src="img/business_icon4.png" alt="">
+            </article>
+          </div>
+          <div class="item-6 card">
+            <article>
+              <h5>5. Content 
+                Registration
+             </h5>
+              <img src="img/business_icon5.png" alt="">
+            </article>
+          </div>
+          <div class="item-7 card">
+            <article>
+              <h5>6. End of campaign and 
+                provision of report
+             </h5>
+              <img src="img/business_icon6.png" alt="">
+            </article>
+          </div>
+          <div class="item-8 card">
+            <article>
+              <h5>7. Payment
+              </h5>
+              <img src="img/business_icon7.png" alt="">
+            </article>
+          </div>
+
+        </div>
+
+        <div class="grid_container bottom" data-aos="fade-left">
+
+          <div class="item-2 card">
+            <article>
+              <h5>1. Choose an 
+                influencer
+             </h5>
+              <img src="img/business_icon8.png" alt="">
+            </article>
+          </div>
+          <div class="item-3 card">
+            <article>
+              <h5>2. Register campaign 
+                information
+              </h5>
+              <img src="img/business_icon9.png" alt="">
+            </article>
+          </div>
+          <div class="item-4 card">
+            <article>
+              <h5>3. Influencer 
+                Decision Making  
+             </h5>
+              <img src="img/business_icon10.png" alt="">
+            </article>
+          </div>
+          <div class="item-5 card">
+            <article>
+              <h5>4. Influencer Delivery
+              </h5>
+              <img src="img/business_icon11.png" alt="">
+            </article>
+          </div>
+          <div class="item-6 card">
+            <article>
+              <h5>5. Content 
+                Registration
+             </h5>
+              <img src="img/business_icon12.png" alt="">
+            </article>
+          </div>
+          <div class="item-7 card">
+            <article>
+              <h5>6. End of campaign and 
+                provision of report
+             </h5>
+              <img src="img/business_icon13.png" alt="">
+            </article>
+          </div>
+          <div class="item-8 card">
+            <article>
+              <h5>7. Payment
+              </h5>
+              <img src="img/business_icon7.png" alt="">
+            </article>
+          </div>
+
+          <div class="item-1 txt">
+            <article>
+              <h4>Selective campaign 
+              </h4>
+              <p>Register advertising campaign information, and advertisers directly select influencers.
+                After checking the quote of the selected influencer, the campaign will proceed when the final willingness to participate is confirmed. Influencers create content according to the campaign mission and post it on their SNS.
+                When the campaign period ends, reports are provided to advertisers and influencers, and settlement is made based on the report results.
+                </p>
+            </article>
+          </div>
+          
+
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="business2">
+      <div class="business2_wrap container">
+        <div class="business2_cont">
+          <div class="business2_data" data-aos="flip-left">
+            <p>
+              InMark measures the activity index of influencers through InMark's own evaluation algorithm, and provides advertisers with indicators to recommend or select influencers that match the brand image, 'fake followers', 'like bots', etc. will be able to rule out
+
+            </p>
+
+            <div class="business2_data_title">Data Analysis Verification System 
+            </div>
+          </div>
+          
+
+          <div class="business2_steaking" data-aos="flip-right">
+            <p>
+              Advertisers need IMK tokens to pay campaign rewards. Before registering for the campaign, you need to purchase tokens and transfer tokens to your wallet for reward distribution.
+
+In addition, a discount rate is automatically applied to the advertising campaign price according to the holding period and quantity of tokens in the advertiser's reward wallet.
+
+            </p>
+
+            <div class="business2_steaking_title">Corporate Staking
+            </div>
+          </div>
+
+        </div><!-- business2_cont -->
+      </div><!-- business2_wrap -->
+    </section>
+
+
+
+
+    <section id="wallet">
+      <div class="wallet_wrap container">
+        <div class="wallet_cont">
+          <div class="wallet_cont_left" data-aos="fade-right"
+          data-aos-offset="300">
+            
+            
+            <p>
+              There are two wallets supported by InMark: a reward payment wallet for advertisers and a general wallet.
+
+Both wallets can check IMK tokens in real time, and are equipped with functions to transfer and store.
+The reward payment wallet has a function of applying a discount rate to the advertising campaign price according to the holding period and quantity of tokens.
+
+You can transfer INK tokens to the listed exchange and exchange them for fiat currencies.
+
+            </p>
+
+            <a href=""><button>wallet >></button></a>
+          </div><!-- wallet_cont_left -->
+
+
+
+
+          <div class="wallet_cont_right" data-aos="fade-up" data-aos-duration="1500"><img src="img/wallet.png" alt="wallet"></div>
+        </div><!-- wallet_cont -->
+      </div><!-- wallet_wrap -->
+    </section>
+    <!-- roadmap 시작 -->
+    <section id="roadmap">
+      <div class="rdm_wrap container">
+        <h3>Roadmap</h3>
+
+        <div class="rdm_box_wrap">
+          <div class="rdm_box" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+            <div class="rdm_img"><img src="img/roadmap_1.png" alt="roadmap_img_1"></div>
+            <div class="rdm_txt">
+              <h4>2021</h4>
+              <ul>
+                <li><p>Q3 InMark platform planning Formation of team & advisor and establishment of foundation
+                </p></li>
+                <li><p>Q4 Dashboard, backend development Smart contract development
+                </p></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="rdm_box" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1700">
+            <div class="rdm_img"><img src="img/roadmap_2.png" alt="roadmap_img_2"></div>
+            <div class="rdm_txt">
+              <h5>2022</h5>
+              <ul>
+                <li><p>Q1 Whitepaper V1.0 
+                </p></li>
+                <li><p>Q2 Start of InMark Wallet development
+                </p></li>
+                <li><p>Q3 InMark platform beta development begins
+             </p></li>
+                <li><p>Q4 Started development of contribution measurement algorithm
+             </p></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rdm_box" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1900">
+            <div class="rdm_img"><img src="img/roadmap_3.png" alt="roadmap_img_3"></div>
+            <div class="rdm_txt">
+              <h4>2023</h4>
+              <ul>
+                <li><p>Q1 InMark Wallet development completed Listed on overseas exchanges
+             </p></li>
+                <li><p>Q2 InMark platform pilot operation Start developing SNS API Began development of advanced analytics tools for advertisers
+             </p></li>
+                <li><p>Pre-recruitment of advertisers and influencers Preparing to launch the InMark platform
+             </p></li>
+                <li><p>InMark platform official launch Advertising agency and agency sales
+                  Additional listing on overseas exchanges</p></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- roadmap 끝 -->
+
+    <!-- contact 시작 -->
+    <section id="contact">
+      <div class="ct_wrap container">
+        <h3 data-aos="fade-up" data-aos-duration="3000">Contact</h3>
+        <form class="gform" action="" data-email method>
+          <input type="text" value placeholder="Title" class="title aos-init aos-animate" name="title" required
+            data-aos="fade-up" data-aos-duration="3000">
+          <div class="half_input">
+            <input type="email" value placeholder="E-mail" class="email aos-init aos-animate" name="email" required
+              data-aos="fade-up" data-aos-duration="3000">
+            <input type="text" value placeholder="Name" class="name aos-init aos-animate" name="name" required
+              data-aos="fade-up" data-aos-duration="3000">
+          </div>
+          <textarea placeholder="Content" id="content" class="aos-init aos-animate" name="content" data-aos="fade-up"
+            data-aos-duration="3000"></textarea>
+          <input type="submit" value="SEND" class="send aos-init aos-animate" data-aos-duration="3000">
+        </form>
+      </div>
+    </section>
+    <!-- contact 끝 -->
 
   </main>
   
   <footer>
+    <div class="f_wrap container">
+      <div class="f_ct">
+        <h1><a href="index_eng.html"><img src="./img/footer_logo.png" alt="footer logo"></a></h1>
 
+        <div class="f_info">
+        <h5>CEO :</h5>  
+        <h5>ADDRESS :</h5>
+        <h5>CUSTOMER CENTER :</h5>
+        <h5>OPERATING HOURS : AM 9:00 -PM 18:00</h5>
+        </div>
+
+        <div class="f_com">
+          <a href="" class="tele"> <i class="xi-telegram xi-2x"></i></a>
+          <a href="" class="kakao"> <i class="xi-kakaotalk xi-2x"></i></a>
+        </div>
+      </div>
+      <p class="warning">ConMile 재단은 코인제작 및 플랫폼 운영, 지갑 관리, 거래소 상장 추진 및 관리에 관한 업무만 진행하고 있습니다.</p>
+    </div>
   </footer>
 
   <script>
     AOS.init();
   </script>
+
 
 </body>
 

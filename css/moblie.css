@@ -13,21 +13,31 @@
     grid-template-columns: repeat(6, minmax(14%, auto));
   }
 
-  .grid_container .item-1.txt p{
+  .grid_container .item-1.txt p {
     font-size: 14px;
   }
 
-  
-/*business2*/
-.business2_data{
-  width: 49%;
-  padding: 5% 2% 2.5%;
-}
 
-.business2_steaking{
-  width: 49%;
-  padding: 5% 2% 2.5%;
-}
+  /*business2*/
+  .business2_data {
+    width: 49%;
+    padding: 5% 2% 2.5%;
+  }
+
+  .business2_steaking {
+    width: 49%;
+    padding: 5% 2% 2.5%;
+  }
+
+    /* roadmap */
+    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
+      padding: 0 33%;
+    }
+    /* contact */
+    #contact .ct_wrap form input.send {
+      width: 30%;
+      line-height: 3.5rem;
+    }
 
 }
 
@@ -54,27 +64,42 @@
 
   /* business */
 
-  .grid_container .item-1.txt p br{
+  .grid_container .item-1.txt p br {
     display: none;
   }
 
-   /*business2*/
+  /*business2*/
 
-   .business2_data br , .business2_steaking br{
+  .business2_data br,
+  .business2_steaking br {
     display: none;
   }
 
-  
-    /*wallet*/
+
+  /*wallet*/
 
 
-    .wallet_cont_left > p br{
-      display: none;
+  .wallet_cont_left>p br {
+    display: none;
+  }
+
+  .wallet_cont_right::before {
+    width: 540px;
+    height: 600px;
+  }
+
+    /* roadmap */
+    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
+      padding: 0 23%;
     }
-
-    .wallet_cont_right::before{
-      width: 540px;
-      height: 600px;
+    /* contact */
+    #contact .ct_wrap form input.send {
+      width: 40%;
+      line-height: 3.2rem;
+    }
+    /* footer */
+    footer .f_wrap .f_ct .f_com {
+      width: 15%;
     }
 
 
@@ -85,7 +110,7 @@
 /*아이패드 (768px)*/
 @media screen and (max-width:991px) {
 
-  
+
   /* home */
 
   .main_txt {
@@ -103,9 +128,9 @@
     display: block;
   }
 
-/* about */
+  /* about */
 
-  #about .about_area .about_area_txt  {
+  #about .about_area .about_area_txt {
     flex-direction: column;
   }
 
@@ -125,61 +150,79 @@
 
   /* business */
 
-  .grid_container,.grid_container.bottom{
+  .grid_container,
+  .grid_container.bottom {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .grid_container.bottom .item-1{
-    grid-column:1/2;
+  .grid_container.bottom .item-1 {
+    grid-column: 1/2;
     grid-column-start: 3;
     grid-column-end: 5;
   }
 
-  .grid_container.bottom{
+  .grid_container.bottom {
     margin-top: 10%;
   }
 
 
-   /*wallet*/
+  /*wallet*/
 
-   .wallet_cont {
+  .wallet_cont {
     flex-direction: column;
-}
+  }
 
-.wallet_cont_left p::after {
-  left: 50%;
-  background:  linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.744792) 50%,  #FFFFFF 100%);
-}
+  .wallet_cont_left p::after {
+    left: 50%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.744792) 50%, #FFFFFF 100%);
+  }
 
-  .wallet_cont_left{
+  .wallet_cont_left {
     width: 100%;
     margin-top: 0;
 
   }
 
-  .wallet_cont_left > p{
+  .wallet_cont_left>p {
     text-align: right;
   }
 
-  .wallet_cont_left > p br{
+  .wallet_cont_left>p br {
     display: block;
   }
 
-  .wallet_cont_right::before{
+  .wallet_cont_right::before {
     width: 620px;
     height: 700px;
   }
 
-  .wallet_cont_left > a {
+  .wallet_cont_left>a {
     float: right;
-}
+  }
 
-.wallet_cont_right {
-  margin: 10% 0;
-}
+  .wallet_cont_right {
+    margin: 10% 0;
+  }
 
 
-  
+    /* roadmap */
+    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
+      padding: 0 10%;
+    }
+    /* contact */
+    #contact .ct_wrap form input.send {
+      width: 50%;
+    }
+    /* footer */
+    footer .f_wrap .f_ct h1 img {
+      max-width: 70%;
+    }
+    footer .f_wrap .f_ct .f_com {
+      width: 20%;
+    }
+
+
+
 
 }
 
@@ -190,37 +233,76 @@
 @media screen and (max-width:767px) {
 
 
-  
+
 
   /*business2*/
 
-  .business2_data_title{
+  .business2_data_title {
     top: -11%;
   }
 
-  .business2_steaking_title{
+  .business2_steaking_title {
     top: -11%;
   }
-  
 
-   /*wallet*/
-   
-  .wallet_cont_left > a{
+
+  /*wallet*/
+
+  .wallet_cont_left>a {
     width: 40%;
   }
 
-  .wallet_cont_left > p br{
+  .wallet_cont_left>p br {
     display: none;
-  } 
+  }
 
-  .wallet_cont_right{
+  .wallet_cont_right {
     width: 90%;
   }
 
 
-  .wallet_cont_right::before{
+  .wallet_cont_right::before {
     width: 450px;
     height: 600px;
+  }
+
+
+   /* roadmap */
+   #roadmap .rdm_wrap .rdm_box_wrap .rdm_box {
+    padding: 0;
+  }
+  /* contact */
+  #contact .ct_wrap form .half_input {
+    flex-direction: column;
+    width: 100%;
+  }
+  #contact .ct_wrap form .half_input .email {
+    margin: 0 0 3% 0;
+    width: 100%;
+  }
+  #contact .ct_wrap form .half_input .name {
+    width: 100%;
+  }
+  #contact input, #contact textarea {
+    width: 100%;
+  }
+  /* footer */
+  footer .f_wrap .f_ct {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  footer .f_wrap .f_ct h1 {
+    width: 30%;
+    margin-bottom: 3%;
+  }
+  footer .f_wrap .f_ct .f_info {
+    width: 100%;
+    margin-bottom: 3%;
+    font-size: 0.8rem;
+  }
+  footer .f_wrap .f_ct .f_com {
+    width: 30%;
   }
 }
 
@@ -234,6 +316,7 @@
   .main_txt {
     top: 44%;
   }
+
   .mobile_wrap ul li {
     line-height: 3;
   }
@@ -265,83 +348,129 @@
   h3 {
     font-size: 2em;
   }
-/* about */
-  #about .about_area .about_area_txt  .about_txt h4 {
+
+  /* about */
+  #about .about_area .about_area_txt .about_txt h4 {
     font-size: 1.5rem;
   }
 
-  #about .about_area .about_area_txt  .about_txt article {
+  #about .about_area .about_area_txt .about_txt article {
     font-size: 14px;
   }
 
   /* business */
 
-  .grid_container,.grid_container.bottom{
+  .grid_container,
+  .grid_container.bottom {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .grid_container.bottom .item-1{
+  .grid_container.bottom .item-1 {
     grid-column: span 2;
     text-align: right;
   }
 
-  
-
-/*business2*/
-.business2_cont {
-  flex-direction: column;
-}
-
-.business2_data,.business2_steaking  {
-  width: 100%;
-  padding: 10% 2% 5.5%;
-}
-.business2_data{
-  margin-bottom: 20%;
-}
-
-.business2_data_title{
-  top: -10%;
-}
-
-.business2_steaking_title{
-  top: -9%;
-}
-  
-
-/*wallet*/
-
-.wallet_cont_left{
-  margin-left: 0;
-}
-
-.wallet_cont_left > p br{
-  display: none;
-}
-
-.wallet_cont_left > a{
-  width: 50%;
-}
-
-.wallet_cont_right{
-  width: 100%;
-  margin-left: 0;
-}
 
 
-.wallet_cont_right::before{
-  width: 380px;
-  height: 540px;
-}
+  /*business2*/
+  .business2_cont {
+    flex-direction: column;
+  }
+
+  .business2_data,
+  .business2_steaking {
+    width: 100%;
+    padding: 10% 2% 5.5%;
+  }
+
+  .business2_data {
+    margin-bottom: 20%;
+  }
+
+  .business2_data_title {
+    top: -10%;
+  }
+
+  .business2_steaking_title {
+    top: -9%;
+  }
+
+
+  /*wallet*/
+
+  .wallet_cont_left {
+    margin-left: 0;
+  }
+
+  .wallet_cont_left>p br {
+    display: none;
+  }
+
+  .wallet_cont_left>a {
+    width: 50%;
+  }
+
+  .wallet_cont_right {
+    width: 100%;
+    margin-left: 0;
+  }
+
+
+  .wallet_cont_right::before {
+    width: 380px;
+    height: 540px;
+  }
+
+   /* roadmap */
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt {
+    width: 100%;
+  }
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_img::after {
+    right: -50%;
+    top: 24%;
+    width: 60px;
+    height: 2px;
+  }
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4 {
+    font-size: 2.5rem;
+    left: -20%;
+    top: 10%;
+  }
+  #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h5 {
+    font-size: 2.5rem;
+  }
+  /* contact */
+  #contact {
+    padding: 100px 4%;
+  }
+  #contact .ct_wrap form input.send {
+    width: 60%;
+  }
 }
 
 
 
 /*모바일3 갤럭시*/
 
-@media screen and (max-width:425px) {}
+@media screen and (max-width:425px) {
+    /* contact */
+    #contact .ct_wrap form input.send {
+      width: 70%;
+      line-height: 3rem;
+      font-weight: 300;
+    }
+}
 
 
 
 /*모바일4 아이폰*/
-@media screen and (max-width:375px) {}
+@media screen and (max-width:375px) {
+    /* roadmap */
+    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_img::after {
+      right: -90%;
+      top: 15%;
+    }
+    #roadmap .rdm_wrap .rdm_box_wrap .rdm_box .rdm_txt h4 {
+      top: 2%;
+    }
+}
