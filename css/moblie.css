@@ -6,6 +6,29 @@
     width: auto;
     height: 100%;
   }
+
+  /* business */
+
+  .grid_container {
+    grid-template-columns: repeat(6, minmax(14%, auto));
+  }
+
+  .grid_container .item-1.txt p{
+    font-size: 14px;
+  }
+
+  
+/*business2*/
+.business2_data{
+  width: 49%;
+  padding: 5% 2% 2.5%;
+}
+
+.business2_steaking{
+  width: 49%;
+  padding: 5% 2% 2.5%;
+}
+
 }
 
 
@@ -29,6 +52,30 @@
     margin: 10% auto;
   }
 
+  /* business */
+
+  .grid_container .item-1.txt p br{
+    display: none;
+  }
+
+   /*business2*/
+
+   .business2_data br , .business2_steaking br{
+    display: none;
+  }
+
+  
+    /*wallet*/
+
+
+    .wallet_cont_left > p br{
+      display: none;
+    }
+
+    .wallet_cont_right::before{
+      width: 540px;
+      height: 600px;
+    }
 
 
 }
@@ -37,6 +84,8 @@
 
 /*아이패드 (768px)*/
 @media screen and (max-width:991px) {
+
+  
   /* home */
 
   .main_txt {
@@ -73,13 +122,107 @@
     width: 100%;
     margin-top: 10%;
   }
+
+  /* business */
+
+  .grid_container,.grid_container.bottom{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid_container.bottom .item-1{
+    grid-column:1/2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .grid_container.bottom{
+    margin-top: 10%;
+  }
+
+
+   /*wallet*/
+
+   .wallet_cont {
+    flex-direction: column;
+}
+
+.wallet_cont_left p::after {
+  left: 50%;
+  background:  linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.744792) 50%,  #FFFFFF 100%);
+}
+
+  .wallet_cont_left{
+    width: 100%;
+    margin-top: 0;
+
+  }
+
+  .wallet_cont_left > p{
+    text-align: right;
+  }
+
+  .wallet_cont_left > p br{
+    display: block;
+  }
+
+  .wallet_cont_right::before{
+    width: 620px;
+    height: 700px;
+  }
+
+  .wallet_cont_left > a {
+    float: right;
+}
+
+.wallet_cont_right {
+  margin: 10% 0;
+}
+
+
+  
+
 }
 
 
 
 /*모바일*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+
+
+  
+
+  /*business2*/
+
+  .business2_data_title{
+    top: -11%;
+  }
+
+  .business2_steaking_title{
+    top: -11%;
+  }
+  
+
+   /*wallet*/
+   
+  .wallet_cont_left > a{
+    width: 40%;
+  }
+
+  .wallet_cont_left > p br{
+    display: none;
+  } 
+
+  .wallet_cont_right{
+    width: 90%;
+  }
+
+
+  .wallet_cont_right::before{
+    width: 450px;
+    height: 600px;
+  }
+}
 
 
 /*모바일2*/
@@ -130,6 +273,66 @@
   #about .about_area .about_area_txt  .about_txt article {
     font-size: 14px;
   }
+
+  /* business */
+
+  .grid_container,.grid_container.bottom{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid_container.bottom .item-1{
+    grid-column: span 2;
+    text-align: right;
+  }
+
+  
+
+/*business2*/
+.business2_cont {
+  flex-direction: column;
+}
+
+.business2_data,.business2_steaking  {
+  width: 100%;
+  padding: 10% 2% 5.5%;
+}
+.business2_data{
+  margin-bottom: 20%;
+}
+
+.business2_data_title{
+  top: -10%;
+}
+
+.business2_steaking_title{
+  top: -9%;
+}
+  
+
+/*wallet*/
+
+.wallet_cont_left{
+  margin-left: 0;
+}
+
+.wallet_cont_left > p br{
+  display: none;
+}
+
+.wallet_cont_left > a{
+  width: 50%;
+}
+
+.wallet_cont_right{
+  width: 100%;
+  margin-left: 0;
+}
+
+
+.wallet_cont_right::before{
+  width: 380px;
+  height: 540px;
+}
 }
 
 
