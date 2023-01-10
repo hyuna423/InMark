@@ -2,25 +2,39 @@
     a{text-decoration : none;}
     address{font-style:normal;}
 
+    .business_cont_up_txt{
+      margin-right: 3%;
+    }
 
-
+    .business2_data_title{
+      width: 285px;
+    }
 
     
 /*데탑*/
 @media screen and (max-width:1440px) {
+
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+
+
+    .business_cont_down_txt br {
+  display: none;
+}
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
-}
+
+
+  }
+
 
 
 

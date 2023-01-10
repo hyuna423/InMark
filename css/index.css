@@ -15,9 +15,9 @@ h3{
   text-fill-color: transparent;
 }
 
-/* body {
+body {
   overflow-x: hidden;
-} */
+}
 @media (min-width:1521px) {
   .container {
     max-width: 1521px;
@@ -66,6 +66,11 @@ h3{
   color: #fff;
 }
 
+
+
+
+
+/*business의 위쪽*/
 .business_cont_up{
   width: 100%;
   display: flex;
@@ -84,22 +89,59 @@ h3{
   -1px 1px 0 #CC02FF,
   1px 1px 0 #CC02FF;  
   font-size: 1.1em;
+  margin-bottom: 8%;
 }
+
+
 
 
 .business_cont_up_boxes{
   width: 60%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows : repeat(2, 200px);
-  gap: 20px;
+}
+
+.business_cont_up_box_upperSide{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.business_upperSide_left{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.business_upperSide_right{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.business_cont_up_box_downSide{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.business_downSide_left{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.business_downSide_right{
+  width: 50% !important;
 }
 
 
 
 .business_cont_up_box{
   background-color: rgba(32,33,53,.9);
-  padding: 10%;
+  padding: 5% 5% 25%;
+  margin-right: 10px;
+  width: 50%;
+  height: auto;
 }
 
 .box1{
@@ -149,6 +191,7 @@ h3{
 
 .box4{
   position: relative;
+  margin-right: 0 !important;
 }
 
 .box4::after{
@@ -193,12 +236,11 @@ h3{
 }
 
 .box7{
+  width: 100% !important;
+  height: 100%;
   position: relative;
-  grid-column: 3 / span 2;
-  grid-row: 2 / 2;
   background-color: rgba(55,56,86,.9);
-  z-index: 2;
-  padding: 5%;
+  margin-right: 0 !important;
 }
 
 .box7::after{
@@ -212,18 +254,12 @@ h3{
   background-size: contain;
 }
 
-.box8{
-  grid-column: 3 / span 2;
-  grid-row: 2 / 2;
-  background-color: rgba(55,56,86,.9) !important;
-}
 
 
 
 
 
-
-
+/*business의 아래쪽*/
 
 .business_cont_down{
   width: 100%;
@@ -234,11 +270,43 @@ h3{
 
 .business_cont_down_boxes{
   width: 60%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows : repeat(2, 200px);
-  gap: 20px;
 }
+
+.business_cont_down_box_upperSide{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.business_down_upperSide_left{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.business_down_upperSide_right{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.business_cont_down_box_downSide{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.business_down_downSide_left{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.business_down_downSide_right{
+  width: 50% !important;
+}
+
 
 .business_cont_down_txt{
   width: 30%;
@@ -253,11 +321,15 @@ h3{
   -1px 1px 0 #CC02FF,
   1px 1px 0 #CC02FF;  
   font-size: 1.1em;
+  margin-bottom: 8%;
 }
 
 .business_cont_down_box{
   background-color: rgba(32,33,53,.9);
-  padding: 10%;
+  padding: 5% 5% 30%;
+  margin-right: 10px;
+  width: 50%;
+  height: auto;
 }
 
 
@@ -308,6 +380,7 @@ h3{
 
 .box12{
   position: relative;
+  margin-right: 0 !important;
 }
 
 .box12::after{
@@ -352,12 +425,11 @@ h3{
 }
 
 .box15{
+  width: 100% !important;
+  height: 100%;
   position: relative;
-  grid-column: 3 / span 2;
-  grid-row: 2 / 2;
   background-color: rgba(55,56,86,.9);
-  z-index: 2;
-  padding: 5%;
+  margin-right: 0 !important;
 }
 
 .box15::after{
@@ -369,13 +441,6 @@ h3{
   height: 25%;
   background: url(../img/business_icon14.png) no-repeat right bottom;
   background-size: contain;
-}
-
-
-.box16{
-  grid-column: 3 / span 2;
-  grid-row: 2 / 2;
-  background-color: rgba(55,56,86,.9) !important;
 }
 
 
@@ -478,13 +543,11 @@ h3{
   margin-bottom: 4%;
 }
 
-.wallet_cont_left > p{
-  margin-bottom: 8%;
-}
 
 .wallet_cont_left > a{
   display: inline-block;
   width: 25%;
+  margin-top: 8%;
 }
 
 .wallet_cont_left > a > button{

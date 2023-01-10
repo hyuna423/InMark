@@ -10,8 +10,10 @@
   
 .business_cont_up_boxes{
   width: 58%;
-  grid-template-rows : repeat(2, 150px);
-  gap: 10px;
+}
+
+.business_cont_up_box{
+  padding: 5% 5% 18%;
 }
 
 .business_cont_up_txt{
@@ -24,12 +26,14 @@
 
 .business_cont_down_boxes{
   width: 58%;
-  grid-template-rows : repeat(2, 150px);
-  gap: 10px;
 }
 
 .business_cont_down_txt{
-  width: 40%;
+  width: 43%;
+}
+
+.business_cont_down_box{
+  padding: 5% 5% 18%;
 }
 
 
@@ -65,6 +69,10 @@
 
 
     /*wallet*/
+
+    .wallet_cont_left{
+      margin-top: -50%;
+    }
 
     .wallet_cont_left > p br{
       display: none;
@@ -145,6 +153,7 @@
 
     .wallet_cont_left{
       width: 100%;
+      margin-top: 0;
     }
 
     .wallet_cont_left > p br{
@@ -152,8 +161,8 @@
     }
 
     .wallet_cont_right::before{
-      width: 700px;
-      height: 600px;
+      width: 620px;
+      height: 700px;
     }
 
     .wallet_cont_right{
@@ -168,6 +177,15 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+
+  /*business*/
+
+  #business::before{
+    width: 700px;
+  }
+
+
+
 
   /*business2*/
 
@@ -195,9 +213,19 @@
     width: 40%;
   }
 
+  .wallet_cont_left > p br{
+    display: none;
+  } 
+
   .wallet_cont_right{
     width: 90%;
     margin-left: 35%;
+  }
+
+
+  .wallet_cont_right::before{
+    width: 450px;
+    height: 600px;
   }
 }
 
@@ -209,18 +237,100 @@
 
   /*business*/
 
-   .business_cont_up_boxes {
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4, 200px);
+  /*business의 위쪽*/
+
+  .business_cont_up_box_upperSide{
+    flex-direction: column;
+  }
+
+  .business_upperSide_left{
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .business_upperSide_right{
+    width: 100%;
+  }
+
+
+  .business_cont_up_box_downSide{
+    flex-direction: column;
+  }
+
+  .business_downSide_left{
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+
+  .business_downSide_right{
+    width: 100% !important;
   }
 
   .business_cont_up_box{
+    margin-right: 0;
+  }
 
+  .box1, .box3, .box5{
+    margin-right: 3%;
+  }
+
+  .box7 {
+    padding-bottom: 28%;
+  }
+
+
+
+
+  /*business의 아래쪽*/
+  .business_cont_down_box_upperSide{
+    flex-direction: column;
+  }
+
+  .business_cont_down_box_downSide{
+    flex-direction: column;
+  }
+
+
+  .business_down_upperSide_left{
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .business_down_upperSide_right{
+    width: 100%;
+  }
+
+
+  .business_cont_down_box_downSide{
+    flex-direction: column;
+  }
+
+  .business_down_downSide_left{
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+
+  .business_down_downSide_right{
+    width: 100% !important;
+  }
+
+  .business_cont_down_box{
+    margin-right: 0;
+  }
+
+  .box9, .box11, .box13{
+    margin-right: 3%;
+  }
+
+  .box15 {
+    padding-bottom: 28%;
   }
 
   #business::before{
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
   }
 
 
@@ -277,7 +387,9 @@
 
       /*business*/
 
-
+      .business_contents p br {
+        display: none;
+      }
 
 }
 
