@@ -20,6 +20,10 @@ address {
 }
 
 
+body, html {
+  overflow-x: hidden;
+}
+
 
 h3 {
   font-size: 2.5em;
